@@ -12,15 +12,15 @@ import javax.swing.*;
  * @author dani_
  */
 public class ventana_pr extends JFrame {
-      static JLabel jl_logo,jl_foot;
+      static JLabel jl_logo,jl_titulo,jl_foot;
       static JMenuBar JMB_barramenu;
       static JMenu JM_archivo,JM_opciones;
       static JMenuItem JMI_abrir,JMI_guardar_proyecto,JMI_guardar_proyecto_como,JMI_guardar_foto,JMI_ajustes;
-      static JPanel jp_nav,jp_foot;
+      static JPanel jp_logo,jp_nav,jp_section,jp_foot,jp_titulo,jp_contenido;
       static JButton jb_altacine,jb_bajacine,jb_modcine,jb_listcine;
       
       
-      static JPanel jp_section;
+      
     
    
 public ventana_pr() {
@@ -35,7 +35,7 @@ public ventana_pr() {
       
       
       JPanel jp_sectionvpr=null;
-      this.getContentPane().remove(jp_sectionvpr);
+        this.getContentPane().remove(jp_sectionvpr);
        
        
       
@@ -123,22 +123,68 @@ public ventana_pr() {
         
     }
     private JPanel initListarcines(){
-        
+        jp_section=new JPanel();
+        return jp_section;
     }
     private JPanel initaltacine(){
+        
+        //creacion panele principal, secundarios y contenido
         jp_section=new JPanel();
-        jp_section.setLayout(n);
+        jp_section.setLayout(new BorderLayout());
+        
+        
+         jp_titulo=new JPanel();
+         jl_titulo=new JLabel("Dar de alta");
+         jp_contenido=new JPanel();
+         jp_contenido.setLayout(GridLayout(3,2));
+         jl_nombre=new JPanel();
+         jl_poblacion=new JPanel();
+         //creacion interfaz de contenido
+         jl_
+         
+        
+              
+         
+         
+         
+         
+         //añadir contenido a los paneles
+         jp_titulo.add(jl_titulo);
+         
+         
+         //añadir paneles al jp_section
+         jp_section.add(jl_titulo,BorderLayout.NORTH);
+         
+         
+        
+         
+         
+         
+            
         
         
         
         
-        
+        return jp_section;
     }
     private JPanel initmodcine(){
+        jp_section=new JPanel();
+            
+        
+        
+        
+        
+        return jp_section;
         
     }
     private JPanel initbajacine(){
+        jp_section=new JPanel();
+            
         
+        
+        
+        
+        return jp_section;
     }
 
    
