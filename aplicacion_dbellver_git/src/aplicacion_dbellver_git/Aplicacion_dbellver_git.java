@@ -15,7 +15,7 @@ public class Aplicacion_dbellver_git {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Bienvenido ver2");
+        System.out.println("Bienvenido ver1");
     }
     
 }
