@@ -19,9 +19,8 @@ public class ventana_pr extends JFrame {
       static JPanel jp_nav,jp_foot;
       static JButton jb_altacine,jb_bajacine,jb_modcine,jb_listcine;
       
-      static JTextField jt_user,jt_pass;
-      static JLabel jl_user,jl_pass;
-      static JButton jb_insesion, jb_recucon;
+      
+      static JPanel jp_section;
     
    
 public ventana_pr() {
@@ -31,8 +30,12 @@ public ventana_pr() {
     }
 
     private void initVentanaPrincipal(JPanel jp_section) {
-       JPanel jp_sectionvpr=null;
-       this.getContentPane().remove(jp_sectionvpr);
+     
+      
+      
+      
+      JPanel jp_sectionvpr=null;
+      this.getContentPane().remove(jp_sectionvpr);
        
        
       
@@ -91,9 +94,11 @@ public ventana_pr() {
          this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     private JPanel initMenuInicial() {
+         JTextField jt_user,jt_pass;
+         JLabel jl_user,jl_pass;
+         JButton jb_insesion, jb_recucon;
         
-        
-        JPanel jp_section=new JPanel();
+        jp_section=new JPanel();
         jp_section.setLayout(new GridLayout(3,2));
         jp_section.setSize(30,60);
         
@@ -121,6 +126,12 @@ public ventana_pr() {
         
     }
     private JPanel initaltacine(){
+        jp_section=new JPanel();
+        jp_section.setLayout(n);
+        
+        
+        
+        
         
     }
     private JPanel initmodcine(){
